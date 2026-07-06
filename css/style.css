@@ -194,3 +194,29 @@ nav ul li{
     margin-top:10px;
     font-weight:bold;
 }
+
+/* WhatsApp Button */
+
+.whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    font-size:30px;
+    text-decoration:none;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    transition:0.3s;
+    z-index:1000;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+    background:#1ebe5d;
+}
