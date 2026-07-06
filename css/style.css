@@ -252,3 +252,54 @@ nav ul li{
 .gallery img:hover{
     transform:scale(1.05);
 }
+
+/* Contact */
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:40px;
+}
+
+.contact-info{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact-form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.contact-form button{
+    border:none;
+    cursor:pointer;
+}
+
+.contact-info a{
+    text-decoration:none;
+    color:#001f5c;
+}
+
+@media(max-width:768px){
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+}
