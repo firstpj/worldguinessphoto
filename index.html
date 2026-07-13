@@ -1,333 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DE WORLD GUINNESS PHOTO NIG. LTD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DE WORLD GUINNESS PHOTO NIG. LTD</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#001f5c;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+.login-box{
+    background:white;
+    color:#333;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    width:320px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:15px 0;
+    box-sizing:border-box;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#FFD700;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#ffcc00;
+}
+
+#error{
+    color:red;
+}
+</style>
+
 </head>
-
 <body>
 
-<header>
+<div class="login-box">
 
-    <div class="logo">
-        <h2>DE WORLD GUINNESS</h2>
-        <p>PHOTO NIG. LTD</p>
-    </div>
+<h2>DE WORLD GUINNESS</h2>
+<p>Website Under Development</p>
 
-    <nav>
+<input type="password" id="password" placeholder="Enter Password">
 
-        <ul>
+<button onclick="login()">Login</button>
 
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#services">Services</a></li>
-
-            <li><a href="#training">Training</a></li>
-
-            <li><a href="#gallery">Gallery</a></li>
-
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
-</header>
-
-<!-- Hero Section -->
-
-<section id="home" class="hero">
-
-    <div class="hero-text">
-
-        <h1>ONE TEAM.<br>MANY EXPERTS.<br>SHARED SUCCESS.</h1>
-
-        <p>
-            We provide Photography, Printing, Branding,
-            Internet Services, Real Estate,
-            Agro-Allied Products and Professional Training.
-        </p>
-
-        <a href="#services" class="btn">Our Services</a>
-
-    </div>
-
-</section>
-
-<!-- Statistics -->
-
-<section class="stats">
-
-    <div class="stat-box">
-        <h2>10+</h2>
-        <p>Years of Experience</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>500+</h2>
-        <p>Happy Clients</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>8+</h2>
-        <p>Professional Services</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>100%</h2>
-        <p>Customer Satisfaction</p>
-    </div>
-
-</section>
-
-<!-- About -->
-
-<section id="about">
-
-    <h2>About Us</h2>
-
-    <p>
-
-        DE WORLD GUINNESS PHOTO NIG. LTD is an organization where
-        experts from different professional backgrounds unite
-        under one roof to deliver innovative solutions,
-        quality services and exceptional value to individuals,
-        businesses and communities.
-
-    </p>
-
-</section>
-
-<!-- Services -->
-
-<section id="services">
-
-<h2>Our Services</h2>
-
-<div class="service-container">
-
-<div class="card">
-<h3>Photo shoot</h3>
-<p>Passport Photography, Events, Wedding, Graduation and Studio Sessions.</p>
-</div>
-
-<div class="card">
-<h3>Printing & Branding</h3>
-<p>ID Cards, Receipts, Calendars, Exercise Books and Branding.</p>
-</div>
-
-<div class="card">
-<h3>Internet Services</h3>
-<p>Website Development, Internet Access, Programming and Coding.</p>
-</div>
-
-<div class="card">
-<h3>Real Estate</h3>
-<p>Buying, Selling and Leasing of Buildings and Warehouses.</p>
-</div>
-
-<div class="card">
-<h3>Agro-Allied</h3>
-<p>Exportation and Supply of Agro Products.</p>
-</div>
-
-<div class="card">
-<h3>Make-Up</h3>
-<p>Professional Make-up, Wig Installation, Nails and Pedicure.</p>
-</div>
+<p id="error"></p>
 
 </div>
 
-</section>
+<script>
 
-<!-- Training -->
+function login(){
 
-<section id="training">
+    const password="edcba"; // Change this to your own password
 
-<h2>Training Available</h2>
+    if(document.getElementById("password").value===password){
 
-<ul>
+        window.location.href="home.html";
 
-<li>Website Development</li>
+    }else{
 
-<li>Graphic Design</li>
+        document.getElementById("error").innerHTML="Incorrect password.";
 
-<li>Programming</li>
+    }
 
-<li>Game Development</li>
+}
 
-<li>Computer Basics</li>
-
-<li>Entrepreneurship</li>
-
-</ul>
-
-</section>
-
-<!-- Gallery -->
-
-<section id="gallery">
-
-    <h2>Our Gallery</h2>
-
-    <p class="gallery-text">
-        Some of our recent photography, branding, printing and training projects.
-    </p>
-
-    <div class="gallery">
-
-        <div class="gallery">
-
-    <img src="images/hero.jpg" alt="Photo 1" onclick="openImage(this.src)">
-
-    <img src="images/hero.jpg" alt="Photo 2" onclick="openImage(this.src)">
-
-    <img src="images/hero.jpg" alt="Photo 3" onclick="openImage(this.src)">
-
-    <img src="images/hero.jpg" alt="Photo 4" onclick="openImage(this.src)">
-
-    <img src="images/hero.jpg" alt="Photo 5" onclick="openImage(this.src)">
-
-    <img src="images/hero.jpg" alt="Photo 6" onclick="openImage(this.src)">
-<p>More coming soon...</p>
-</div>
-
-<!-- Lightbox -->
-
-<div id="lightbox" class="lightbox" onclick="closeImage()">
-
-    <img id="lightbox-img">
-
-</div>
-
-    </div>
-
-</section>
-
-<section id="contact">
-
-    <h2>Contact Us</h2>
-
-    <div class="contact-container">
-
-        <div class="contact-info">
-
-            <p><strong>Phone:</strong> <a href="tel:+2348138688252">08138688252</a></p>
-
-            <p><strong>Phone:</strong> <a href="tel:+2349115192689">09115192689</a></p>
-
-            <p><strong>Phone:</strong> <a href="tel:+2348083117248">08083117248</a></p>
-
-            <p>
-                <strong>Address:</strong><br>
-                Opposite NEPA Office,<br>
-                After Agbara Bus Stop,<br>
-                Before Car Wash,<br>
-                Along Lagos–Badagry Expressway,<br>
-                Agbara, Ogun State.
-            </p>
-
-        </div>
-
-        <form class="contact-form">
-
-            <input type="text" placeholder="Your Name" required>
-
-            <input type="email" placeholder="Email Address" required>
-
-            <input type="tel" placeholder="Phone Number">
-
-            <textarea placeholder="Write your message..." rows="6"></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
-
-        </form>
-
-    </div>
-
-</section>
-
-<footer class="footer">
-
-    <div class="footer-content">
-
-        <div class="footer-box">
-
-            <h3>DE WORLD GUINNESS</h3>
-
-            <p>
-                One Team. Many Experts. Shared Success.
-            </p>
-
-            <p>
-                Photography, Printing, Branding,
-                Website Development, Internet Services,
-                Real Estate and Professional Training.
-            </p>
-
-        </div>
-
-        <div class="footer-box">
-
-            <h3>Quick Links</h3>
-
-            <a href="#home">Home</a>
-
-            <a href="#about">About</a>
-
-            <a href="#services">Services</a>
-
-            <li><a href="#training">Training</a></li>
-
-
-            <a href="#gallery">Gallery</a>
-
-            <a href="#contact">Contact</a>
-
-        </div>
-
-        <div class="footer-box">
-
-            <h3>Contact</h3>
-
-            <p>📞 08138688252</p>
-
-            <p>📞 09115192689</p>
-
-            <p>📞 08083117248</p>
-
-            <p>📍 Agbara, Ogun State</p>
-
-        </div>
-
-    </div>
-
-    <hr>
-
-    <p class="copyright">
-
-        © 2026 DE WORLD GUINNESS PHOTO NIG. LTD.
-        All Rights Reserved.
-
-    </p>
-
-</footer>
-
-<script src="js/script.js"></script>
-
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/2348138688252"
-    class="whatsapp"
-    target="_blank"
-    title="Chat with us on WhatsApp">
-    💬
-</a>
+</script>
 
 </body>
 </html>
