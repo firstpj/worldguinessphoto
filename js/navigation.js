@@ -18,7 +18,7 @@
   }).join("");
 
   document.getElementById("site-header").innerHTML =
-    '<header class="site-header"><div class="container">' +
+    '<header class="site-header"><div class="tagline-bar">One Team. Many Experts. Shared Success.</div><div class="container">' +
     '<a class="brand" href="index.html"><img src="images/logo.png" alt="">' +
     "<div><strong>DE WORLD GUINNESS</strong><span>PHOTO NIG. LTD</span></div></a>" +
     '<button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">&#9776;</button>' +
@@ -27,7 +27,7 @@
   document.getElementById("site-footer").innerHTML =
     '<footer class="site-footer"><div class="container"><div class="grid">' +
     "<div><h3>DE WORLD GUINNESS PHOTO NIG. LTD</h3><p>One Team. Many Experts. Shared Success.</p></div>" +
-    "<div><h3>Explore</h3>" + pages.map(function (p) { return '<a href="' + p[0] + '">' + p[1] + "</a>"; }).join("") + "</div>" +
+    "<div><h3>Explore</h3>" + pages.map(function (p) { return '<a href="' + p[0] + '">' + p[1] + "</a>"; }).join("") + '<a href="payment.html">Make a Payment</a></div>' +
     '<div><h3>Contact</h3><a href="tel:+2348138688252">+234 813 868 8252</a><a href="tel:+2349115192689">+234 911 519 2689</a><a href="tel:+2348083117248">+234 808 311 7248</a><p>Lagos State, Nigeria</p></div>' +
     '</div><p class="copy">&copy; 2026 DE WORLD GUINNESS PHOTO NIG. LTD. All rights reserved.</p></div></footer>' +
     '<a class="whatsapp" href="https://wa.me/2348138688252" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">&#128172;</a>';

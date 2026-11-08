@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make a Payment | DE WORLD GUINNESS PHOTO NIG. LTD</title>
+<meta name="description" content="Pay DE WORLD GUINNESS PHOTO NIG. LTD securely online with Paystack.">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+<section class="page-hero"><div class="container"><h1>Make a Payment</h1><p>Pay securely by card, bank transfer or USSD. Your card details go to Paystack, never to this website.</p></div></section>
+<section class="section"><div class="container"><div class="card" style="max-width:560px">
+<form id="pay-form" novalidate>
+<label>Your name<input id="pay-name" required></label>
+<label>Email<input id="pay-email" type="email" required></label>
+<label>Phone number<input id="pay-phone" type="tel"></label>
+<label>What is the payment for?<select id="pay-for"><option>Equipment support</option><option>Property project</option><option>Photography or printing</option><option>Training</option><option>Other</option></select></label>
+<label>Amount (NGN)<input id="pay-amount" type="number" min="100" required></label>
+<button class="btn" type="submit">Pay now</button>
+<p class="form-status" id="pay-status" role="status"></p>
+</form></div>
+<p style="margin-top:18px">Keep your payment reference. Questions? <a href="https://wa.me/2348138688252" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/navigation.js"></script>
+<script src="js/script.js"></script>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script src="js/payment.js"></script>
+</body>
+</html>
